@@ -112,7 +112,7 @@ The following stack is a fixed implementation choice rather than a catalogue of 
 
 | Layer | Technology | Use |
 | --- | --- | --- |
-| Main language | Python 3.11 or 3.12 | Application, data pipeline, training and inference |
+| Main language | Python 3.13 | Application, data pipeline, training and inference |
 | Numerical/image processing | NumPy, OpenCV, Pillow | Loading, preprocessing, calibration and measurement |
 | Deep learning | PyTorch, torchvision | Defect-localisation training and inference |
 | Model architecture | U-Net with a pretrained encoder | Pixel-level defect localisation with labelled masks |
@@ -182,9 +182,9 @@ Do not begin Kubernetes, multi-agent orchestration or custom LLM fine-tuning dur
 
 ### 4.1 Dataset
 
-Use MVTec AD, a public industrial anomaly-detection benchmark. Start with two object or texture categories to keep the project manageable.
+Use DsPCBSD+, a public PCB anomaly-detection benchmark. Start with two object or texture categories to keep the project manageable.
 
-- Dataset: https://www.mvtec.com/company/research/datasets/mvtec-ad
+- Dataset: https://doi.org/10.6084/m9.figshare.24970329
 - Review licence and download terms before use.
 - Record the selected categories and licence terms in the repository.
 - Use the public benchmark without adding proprietary or confidential data.
